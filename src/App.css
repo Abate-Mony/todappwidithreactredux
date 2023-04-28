@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+   :root {
+      --transition-color: color 0.4s ease;
+      --transition-bg: background-color 0.3s ease;
+      --ff-manrope: 'Manrope', sans-serif;
+      --ff-mon: 'Montserrat', sans-serif;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
   }
-  to {
-    transform: rotate(360deg);
+  
+  body {
+      font-family: var(--ff-manrope);
   }
-}
+  
+  .btn {
+      width: 400px;
+      max-width: calc(100vw - 20px);
+      margin: 10px auto;
+      border-radius: 0.4rem;
+      background-color: rgb(113, 113, 182);
+      font-size: 1rem;
+      color: #fff;
+      outline: none;
+      border: none;
+      min-height: 45px;
+      font-weight: 400;
+      display: grid;
+      place-content: center;
+      transition: color 0.5s ease-in-out, background-color 0.4s ease;
+  }
+  
+  .btn:is(:hover,
+   :focus) {
+      color: #e3e3e3;
+      background-color: rgb(115, 115, 225, 0.8);
+  }
+  
+  .container {
+      width: 95%;
+      margin: 0 auto;
+  }
+  
+  .scrollto::-webkit-scrollbar-thumb {
+      background: orange
+  }
+  
+   ::-webkit-scrollbar-track .scrollto {
+      background: rgb(17, 201, 51)
+  }
